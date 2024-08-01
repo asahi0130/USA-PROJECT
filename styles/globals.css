@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@media screen and (display-mode: standalone){
+  
+  html{
+
+
+    background-color: var(--primary-bg);
+    
+}
+  
+
+
+}
+
+:root{
+  --primary-bg: #ffffff;
+  --secondary-bg: #323232;
+  --secondary-bg: #323232;
+  --primary-text: #FFFFFF;
+  --secondary-text: #BFBFBF;
+  --accent: #3A50F7;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: var(--primary-bg);
+  overflow-x: hidden;
+
+
+
+  }
+
+.primary-bg{
+  background-color: var(--primary-bg);
+}
+.secondary-bg{
+  background-color: var(--secondary-bg);
+}
+.accent-bg{
+  background-color: var(--accent);
+}
+.accent-text{
+  color: var(--accent)
+}
+
+.primary-text{
+  color: #FFFFFF
+}
+.second-text{
+  color: #BFBFBF
+}
+
+
+.sectionBox{
+  /* background-color: #F5F5FA; */
+  background-color: rgba(245, 245, 250, 0.12)
+
+}
+
+.textBox{
+  background-color: #C6C6D6;
+
+  border-color: #F5F5FA;
+}
+
+
+textarea:focus, select:focus, input:focus{
+  outline: none !important;
+  box-shadow: 0 0 7px #fff;
+}
+
+
+
+
+input[type='range']{
+  background-color: #9CA3AF;
+}
+
+input[type='range']::-webkit-slider-thumb{
+  background-color: #564AE3;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+
+  overflow: visible;
+  cursor: pointer;
+}
+
+
+.wrap{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
